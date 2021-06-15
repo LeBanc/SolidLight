@@ -1,0 +1,64 @@
+{
+    "name": "InputsAction",
+    "maps": [
+        {
+            "name": "LightCursor",
+            "id": "965d6a04-1708-44c3-a19a-714ef94349a8",
+            "actions": [
+                {
+                    "name": "Press",
+                    "type": "Button",
+                    "id": "ccdabeee-5d18-4236-a793-35506bf1b41c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Release",
+                    "type": "Button",
+                    "id": "5c79ba08-c7ca-46a8-b597-af9aa8085933",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e46dcb60-4cfd-47f5-94f0-fdac9d10da22",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Mouse",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b20523b5-2938-4c3e-ad7b-eea8beecc804",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "Mouse",
+                    "action": "Release",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Mouse",
+            "bindingGroup": "Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
