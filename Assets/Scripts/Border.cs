@@ -13,7 +13,14 @@ public class Border : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Character"))
         {
-            Destroy(collision.gameObject);
+            if(collision.gameObject.TryGetComponent(out RunnerController _runner))
+            {
+                _runner.Die();
+            }
+            else
+            {
+                Destroy(collision.gameObject);
+            }            
         }        
     }
 }

@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 2020700}
   - component: {fileID: 2020701}
   - component: {fileID: 2020702}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Point Light 2D
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 442696773}
   m_Layer: 3
   m_Name: Mask
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -970,7 +970,7 @@ GameObject:
   - component: {fileID: 962067117}
   m_Layer: 3
   m_Name: SizeChanger
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
