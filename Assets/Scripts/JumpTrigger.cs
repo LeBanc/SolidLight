@@ -15,7 +15,7 @@ public class JumpTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(!col2D.IsTouchingLayers(LayerMask.GetMask("Trigger")))
+        if(!col2D.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
         {
             OnJump?.Invoke();
         }

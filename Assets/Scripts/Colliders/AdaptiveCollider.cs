@@ -41,7 +41,7 @@ public class AdaptiveCollider : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // If the collision is with the light (Player tag)
-        if(collision.collider.CompareTag("Player"))
+        if(collision.collider.CompareTag("Player") || collision.collider.CompareTag("Light"))
         {
             List<Vector2> _boundaries = new List<Vector2>();
             RaycastHit2D hit;
@@ -143,9 +143,12 @@ public class AdaptiveCollider : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player") || collision.collider.CompareTag("Light"))
         {
-            physicsCollider.enabled = false;
+            if (!trigger.IsTouchingLayers(LayerMask.GetMask("Light")))
+            {
+                physicsCollider.enabled = false;
+            }
         }
     }
 }

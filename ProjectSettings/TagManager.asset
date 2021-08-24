@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Character
+  - Light
   layers:
   - Default
   - TransparentFX
@@ -12,9 +13,9 @@ TagManager:
   - Light
   - Water
   - UI
-  - Player
+  - Character
   - Trigger
-  - 
+  - Obstacle
   - 
   - 
   - 

@@ -17,7 +17,7 @@ public class WallJumpDetectionTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (col2D.IsTouchingLayers(LayerMask.GetMask("Trigger")))
+        if (col2D.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
         {
             OnHang?.Invoke();
         }
@@ -25,7 +25,7 @@ public class WallJumpDetectionTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!col2D.IsTouchingLayers(LayerMask.GetMask("Trigger")))
+        if (!col2D.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
         {
             OnFall?.Invoke();
         }
